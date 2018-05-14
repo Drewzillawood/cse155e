@@ -1,0 +1,721 @@
+
+&lt;!DOCTYPE html&gt;
+&lt;!--[if IEMobile 7 ]&gt;&lt;html class=&quot;ie iem7&quot;&gt;&lt;![endif]--&gt;
+&lt;!--[if lt IE 7 ]&gt;&lt;html class=&quot;ie ie6&quot; lang=&quot;en&quot;&gt;&lt;![endif]--&gt;
+&lt;!--[if IE 7 ]&gt;&lt;html class=&quot;ie ie7&quot; lang=&quot;en&quot;&gt;&lt;![endif]--&gt;
+&lt;!--[if IE 8 ]&gt;&lt;html class=&quot;ie ie8&quot; lang=&quot;en&quot;&gt;&lt;![endif]--&gt;
+&lt;!--[if (gte IE 9)|(gt IEMobile 7) ]&gt;&lt;html class=&quot;ie&quot; lang=&quot;en&quot;&gt;&lt;![endif]--&gt;
+&lt;!--[if !(IEMobile) | !(IE)]&gt;&lt;!--&gt;&lt;html lang=&quot;en&quot;&gt;&lt;!-- InstanceBegin template=&quot;/Templates/fixed.dwt&quot; codeOutsideHTMLIsLocked=&quot;false&quot; --&gt;&lt;!--&lt;![endif]--&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=UTF-8&quot; /&gt;
+&lt;meta name=&quot;author&quot; content=&quot;University of Nebraska-Lincoln | Web Developer Network&quot; /&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;initial-scale=1.0, width=device-width&quot; /&gt;
+
+&lt;!-- For Microsoft --&gt;
+&lt;!--[if IE]&gt;
+&lt;meta http-equiv=&quot;cleartype&quot; content=&quot;on&quot;&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot;&gt;
+&lt;![endif]--&gt;
+
+&lt;!-- For iPhone 4 --&gt;
+&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;114x114&quot; href=&quot;/wdn/templates_4.0/includes/icons/h-apple-touch-icon-precomposed.png&quot;&gt;
+&lt;!-- For iPad 1--&gt;
+&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;72x72&quot; href=&quot;/wdn/templates_4.0/includes/icons/m-apple-touch-icon-precomposed.png&quot;&gt;
+&lt;!-- For iPhone 3G, iPod Touch and Android --&gt;
+&lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;/wdn/templates_4.0/includes/icons/l-apple-touch-icon-precomposed.png&quot;&gt;
+&lt;!-- For everything else --&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/wdn/templates_4.0/includes/icons/favicon.ico&quot; /&gt;
+
+&lt;!--
+    Membership and regular participation in the UNL Web Developer Network
+    is required to use the UNL templates. Visit the WDN site at
+    http://wdn.unl.edu/. Click the WDN Registry link to log in and
+    register your unl.edu site.
+    All UNL template code is the property of the UNL Web Developer Network.
+    The code seen in a source code view is not, and may not be used as, a
+    template. You may not use this code, a reverse-engineered version of
+    this code, or its associated visual presentation in whole or in part to
+    create a derivative work.
+    This message may not be removed from any pages based on the UNL site template.
+
+    $Id: fixed.dwt | 252c2891a48c70db689be6d897d4f34768b8258a | Thu Aug 1 15:08:19 2013 -0500 | Kevin Abel  $
+--&gt;
+&lt;!-- Load Cloud.typography fonts --&gt;
+	&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;all&quot; href=&quot;//cloud.typography.com/7717652/616662/css/fonts.css&quot; /&gt;
+&lt;!-- Load our base CSS file --&gt;
+&lt;!--[if gte IE 9]&gt;&lt;!--&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;all&quot; href=&quot;//unlcms.unl.edu/wdn/templates_4.0/css/all.css?dep=4.0.34&quot; /&gt;
+&lt;!--&lt;![endif]--&gt;
+
+&lt;!-- Load the template JS file --&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;//unlcms.unl.edu/wdn/templates_4.0/scripts/compressed/all.js?dep=4.0.34&quot; id=&quot;wdn_dependents&quot;&gt;&lt;/script&gt;
+
+&lt;!--[if lt IE 9]&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;all&quot; href=&quot;//unlcms.unl.edu/wdn/templates_4.0/css/all_oldie.css?dep=4.0.34&quot; /&gt;
+    &lt;script src=&quot;//html5shiv.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+
+&lt;!-- For all IE versions, bring in the tweaks --&gt;
+&lt;!--[if IE]&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;all&quot; href=&quot;//unlcms.unl.edu/wdn/templates_4.0/css/ie.css&quot; /&gt;
+&lt;![endif]--&gt;
+
+&lt;!-- Load the print styles --&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;print&quot; href=&quot;//unlcms.unl.edu/wdn/templates_4.0/css/print.css&quot; /&gt;
+
+&lt;!-- InstanceBeginEditable name=&quot;doctitle&quot; --&gt;&lt;title&gt;Computer Science &amp;amp; Engineering | University of Nebraska&amp;ndash;Lincoln&lt;/title&gt;&lt;!-- InstanceEndEditable --&gt;
+
+&lt;!-- InstanceBeginEditable name=&quot;head&quot; --&gt;&lt;!-- Place optional header elements here --&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;link rel=&quot;home&quot; href=&quot;http://cse.unl.edu/&quot; /&gt;
+&lt;link rel=&quot;shortlink&quot; href=&quot;http://cse.unl.edu/node/58&quot; /&gt;
+&lt;base href=&quot;http://cse.unl.edu/&quot; /&gt;
+&lt;meta name=&quot;Generator&quot; content=&quot;Drupal 7 (http://drupal.org)&quot; /&gt;
+&lt;link rel=&quot;canonical&quot; href=&quot;http://cse.unl.edu/home&quot; /&gt;
+
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;http://cse.unl.edu/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css&quot; media=&quot;all&quot; /&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;http://cse.unl.edu/css/css_TZASMA-tn8wcD_3f-4ZLkqUj7GaVuQM8982ffwKEAC8.css&quot; media=&quot;all&quot; /&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;http://cse.unl.edu/css/css_MnXiytJtb186Ydycnpwpw34cuUsHaKc80ey5LiQXhSY.css&quot; media=&quot;all&quot; /&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;http://cse.unl.edu/css/css_0W-7vmZE_OOHzfISkqEXgtRQEgCry7hi_dWdyjicQ4Q.css&quot; media=&quot;all&quot; /&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://cse.unl.edu/js/js_UWQINlriydSoeSiGQxToOUdv493zEa7dpsXC1OtYlZU.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://cse.unl.edu/js/js_IDBX5SzkJ9gGNq7x-qOE_2DZsexqguTJQGMKvi4w-Uw.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+&lt;!--//--&gt;&lt;![CDATA[//&gt;&lt;!--
+var _gaq = _gaq || [];_gaq.push([&quot;_setAccount&quot;, &quot;UA-57802722-1&quot;]);_gaq.push([&quot;_trackPageview&quot;]);(function() {var ga = document.createElement(&quot;script&quot;);ga.type = &quot;text/javascript&quot;;ga.async = true;ga.src = (&quot;https:&quot; == document.location.protocol ? &quot;https://ssl&quot; : &quot;http://www&quot;) + &quot;.google-analytics.com/ga.js&quot;;var s = document.getElementsByTagName(&quot;script&quot;)[0];s.parentNode.insertBefore(ga, s);})();
+//--&gt;&lt;!]]&gt;
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+&lt;!--//--&gt;&lt;![CDATA[//&gt;&lt;!--
+  WDN.setPluginParam(&quot;idm&quot;, &quot;login&quot;, &quot;http://cse.unl.edu/user?destination=node/58&quot;);
+  WDN.setPluginParam(&quot;idm&quot;, &quot;logout&quot;, &quot;user/logout&quot;);
+
+//--&gt;&lt;!]]&gt;
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://cse.unl.edu/js/js_ftlcWLoD7Js98XLjiK6ihhdc_dZUm2QSh3iMQgyRNiE.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://cse.unl.edu/js/js_Gjy5up1Zb1JJ5f-PrjXcTAon9SCO1EqifE9pd30EnT4.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+&lt;!--//--&gt;&lt;![CDATA[//&gt;&lt;!--
+jQuery.extend(Drupal.settings, {&quot;basePath&quot;:&quot;\/&quot;,&quot;pathPrefix&quot;:&quot;&quot;,&quot;ajaxPageState&quot;:{&quot;theme&quot;:&quot;unl_four&quot;,&quot;theme_token&quot;:&quot;ITS0kk-k9-59tQmIiqVmfaxOuMO1sMND_9hIX89fhCs&quot;,&quot;js&quot;:{&quot;misc\/jquery.js&quot;:1,&quot;misc\/jquery.once.js&quot;:1,&quot;misc\/drupal.js&quot;:1,&quot;sites\/all\/modules\/google_analytics\/googleanalytics.js&quot;:1,&quot;0&quot;:1,&quot;1&quot;:1,&quot;sites\/all\/modules\/unl\/unl.js&quot;:1,&quot;public:\/\/custom\/custom_unl_four.js&quot;:1},&quot;css&quot;:{&quot;modules\/system\/system.base.css&quot;:1,&quot;modules\/system\/system.menus.css&quot;:1,&quot;modules\/system\/system.messages.css&quot;:1,&quot;modules\/system\/system.theme.css&quot;:1,&quot;modules\/book\/book.css&quot;:1,&quot;sites\/all\/modules\/date\/date_api\/date.css&quot;:1,&quot;modules\/field\/theme\/field.css&quot;:1,&quot;modules\/node\/node.css&quot;:1,&quot;modules\/search\/search.css&quot;:1,&quot;modules\/user\/user.css&quot;:1,&quot;sites\/all\/modules\/views\/css\/views.css&quot;:1,&quot;sites\/all\/modules\/ctools\/css\/ctools.css&quot;:1,&quot;sites\/all\/themes\/unl_four\/css\/style.css&quot;:1,&quot;sites\/all\/themes\/unl_four\/css\/book-overrides.css&quot;:1,&quot;sites\/all\/themes\/unl_four\/css\/menu-block.css&quot;:1,&quot;sites\/all\/themes\/unl_four\/css\/views.css&quot;:1,&quot;public:\/\/custom\/custom_unl_four.css&quot;:1}},&quot;unl&quot;:{&quot;use_base_tag&quot;:true},&quot;googleanalytics&quot;:{&quot;trackOutbound&quot;:1,&quot;trackMailto&quot;:1,&quot;trackDownload&quot;:1,&quot;trackDownloadExtensions&quot;:&quot;7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip&quot;}});
+//--&gt;&lt;!]]&gt;
+&lt;/script&gt;
+
+&lt;link href=&quot;includes/font-style.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;includes/owl.carousel.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;includes/owl.theme.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;script type='text/javascript'&gt;
+(function (d, t) {
+  var bh = d.createElement(t), s = d.getElementsByTagName(t)[0];
+  bh.type = 'text/javascript';
+  bh.src = '//www.bugherd.com/sidebarv2.js?apikey=axa0mgqmsdstehixcvox1a';
+  s.parentNode.insertBefore(bh, s);
+  })(document, 'script');
+&lt;/script&gt;
+&lt;script src=&quot;includes/cas.js&quot;&gt;&lt;/script&gt;
+&lt;!-- InstanceEndEditable --&gt;
+&lt;!-- InstanceParam name=&quot;class&quot; type=&quot;text&quot; value=&quot;&quot; --&gt;
+&lt;/head&gt;
+&lt;body  class=&quot;html front not-logged-in no-sidebars page-node page-node- page-node-58 node-type-page &quot; data-version=&quot;4.0&quot;&gt;
+
+&lt;div id=&quot;page-top&quot; class=&quot;region region-page-top page-top&quot;&gt;
+  &lt;/div&gt;
+&lt;nav class=&quot;skipnav&quot; role=&quot;navigation&quot;&gt;
+    &lt;a href=&quot;#maincontent&quot;&gt;Skip Navigation&lt;/a&gt;
+&lt;/nav&gt;
+    &lt;div id=&quot;wdn_wrapper&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;wdn_menu_toggle&quot; value=&quot;Show navigation menu&quot; class=&quot;wdn-content-slide wdn-input-driver&quot; /&gt;
+        &lt;noscript&gt;
+    &lt;!-- This is a simple shim to provide vertical space for the noscript warning --&gt;
+    &lt;div id=&quot;wdn_noscript_padding&quot;&gt;&lt;/div&gt;
+&lt;/noscript&gt;
+
+        &lt;header id=&quot;header&quot; role=&quot;banner&quot; class=&quot;wdn-content-slide wdn-band&quot;&gt;
+
+            &lt;div class=&quot;wdn-inner-wrapper&quot;&gt;
+                &lt;div id=&quot;logo&quot;&gt;
+    &lt;h3 class=&quot;wdn_list_descriptor wdn-text-hidden&quot;&gt;Social Outposts&lt;/h3&gt;
+    &lt;ul id=&quot;wdn_social&quot;&gt;
+        &lt;li&gt;
+            &lt;a href=&quot;https://www.facebook.com/UNLincoln&quot; class=&quot;wdn-icon-facebook-circled&quot;&gt;Facebook&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a href=&quot;https://twitter.com/UNLincoln&quot; class=&quot;wdn-icon-twitter-circled&quot;&gt;Twitter&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;a href=&quot;http://www.unl.edu/&quot; title=&quot;UNL website&quot; id=&quot;wdn_logo_link&quot;&gt;UNL&lt;/a&gt;
+&lt;/div&gt;
+                &lt;div id=&quot;wdn_resources&quot;&gt;
+                    &lt;div class=&quot;wdn-resource-label wdn-resource-login-trigger&quot; id=&quot;wdn_identity_management&quot; role=&quot;navigation&quot; aria-labelledby=&quot;wdn_idm_username&quot;&gt;
+    &lt;div class=&quot;wdn-profile-options&quot;&gt;
+        &lt;a class=&quot;wdn-icon-user wdn-idm-login&quot; href=&quot;https://login.unl.edu/cas/login&quot; id=&quot;wdn_idm_username&quot; title=&quot;Log in to UNL&quot; accesskey=&quot;l&quot;&gt;
+            My.UNL Login
+        &lt;/a&gt;
+        &lt;h3 class=&quot;wdn_list_descriptor wdn-text-hidden&quot;&gt;Account Links&lt;/h3&gt;
+        &lt;ul id=&quot;wdn_idm_user_options&quot;&gt;
+            &lt;li id=&quot;wdn_idm_logout&quot;&gt;
+                &lt;a href=&quot;https://login.unl.edu/cas/logout?url=http%3A//www.unl.edu/&quot;&gt;Logout&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+                    &lt;div id=&quot;wdn_search&quot; class=&quot;wdn-resource-label&quot;&gt;
+    &lt;form id=&quot;wdn_search_form&quot; action=&quot;//www1.unl.edu/search/&quot; method=&quot;get&quot; role=&quot;search&quot;&gt;
+		&lt;label class=&quot;wdn-icon-search&quot; for=&quot;wdn_search_query&quot;&gt;Search&lt;/label&gt;
+        &lt;input required accesskey=&quot;f&quot; id=&quot;wdn_search_query&quot; name=&quot;q&quot; type=&quot;search&quot; /&gt;
+        &lt;button type=&quot;submit&quot; title=&quot;Search&quot;&gt;&lt;/button&gt;
+    &lt;/form&gt;
+&lt;/div&gt;
+
+                &lt;/div&gt;
+                &lt;span id=&quot;wdn_institution_title&quot;&gt;University of Nebraska&amp;ndash;Lincoln&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;wdn-share-this-page&quot; id=&quot;wdn-main-share-button&quot;&gt;
+&lt;div class=&quot;wdn-share-button&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;wdn_share_toggle&quot; value=&quot;Show share options&quot; class=&quot;wdn-input-driver&quot; /&gt;
+    &lt;label for=&quot;wdn_share_toggle&quot; class=&quot;wdn-icon-share&quot;&gt;&lt;span class=&quot;wdn-text-hidden&quot;&gt;Share This Page&lt;/span&gt;&lt;/label&gt;
+    &lt;ul class=&quot;wdn-share-options&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;http://go.unl.edu/?url=referer&quot; id=&quot;wdn_createGoURL&quot; class=&quot;wdn-icon-link&quot; rel=&quot;nofollow&quot;&gt;Get a Go URL&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;outpost&quot; id=&quot;wdn_emailthis&quot;&gt;&lt;a href=&quot;mailto:&quot; class=&quot;wdn-icon-mail&quot; rel=&quot;nofollow&quot;&gt;Email this page&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;outpost&quot; id=&quot;wdn_facebook&quot;&gt;&lt;a href=&quot;https://www.facebook.com/sharer/sharer.php&quot; class=&quot;wdn-icon-facebook&quot; rel=&quot;nofollow&quot;&gt;Share on Facebook&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;outpost&quot; id=&quot;wdn_twitter&quot;&gt;&lt;a href=&quot;https://twitter.com/share&quot; class=&quot;wdn-icon-twitter&quot; rel=&quot;nofollow&quot;&gt;Share on Twitter&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;outpost&quot; id=&quot;wdn_linkedin&quot;&gt;&lt;a href=&quot;https://www.linkedin.com/shareArticle?mini=true&quot; class=&quot;wdn-icon-linkedin-squared&quot; rel=&quot;nofollow&quot;&gt;Share on LinkedIn&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+            &lt;div class=&quot;wdn-inner-wrapper&quot;&gt;
+                &lt;div id=&quot;wdn_site_title&quot;&gt;
+                    &lt;span&gt;
+&lt;!-- InstanceBeginEditable name=&quot;titlegraphic&quot; --&gt;Computer Science &amp;amp; Engineering&lt;!-- InstanceEndEditable --&gt;
+&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/header&gt;
+        &lt;div id=&quot;wdn_navigation_bar&quot; role=&quot;navigation&quot; class=&quot;wdn-band&quot;&gt;
+            &lt;nav id=&quot;breadcrumbs&quot; class=&quot;wdn-inner-wrapper&quot;&gt;
+                &lt;!-- WDN: see glossary item 'breadcrumbs' --&gt;
+                &lt;h3 class=&quot;wdn_list_descriptor wdn-text-hidden&quot;&gt;Breadcrumbs&lt;/h3&gt;
+
+&lt;!-- InstanceBeginEditable name=&quot;breadcrumbs&quot; --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.unl.edu/&quot;&gt;UNL&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;&quot;&gt;Computer Science &amp;amp; Engineering&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;!-- InstanceEndEditable --&gt;
+            &lt;/nav&gt;
+            &lt;div id=&quot;wdn_navigation_wrapper&quot;&gt;
+                &lt;nav id=&quot;navigation&quot; role=&quot;navigation&quot; class=&quot;wdn-band&quot;&gt;
+                    &lt;h3 class=&quot;wdn_list_descriptor wdn-text-hidden&quot;&gt;Navigation&lt;/h3&gt;
+
+&lt;!-- InstanceBeginEditable name=&quot;navlinks&quot; --&gt;
+&lt;ul&gt;&lt;li class=&quot;first expanded&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/about&quot;&gt;About&lt;/a&gt;&lt;ul&gt;&lt;li class=&quot;first leaf&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/newsroom&quot;&gt;News&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;leaf&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/facilities&quot;&gt;Facilities&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;leaf&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/events&quot;&gt;Events&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;leaf&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/contact-us&quot;&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;last leaf&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/accreditation&quot;&gt;ABET Accreditation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li class=&quot;expanded&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/prospective-students&quot;&gt;Prospective Student&lt;/a&gt;&lt;ul&gt;&lt;li class=&quot;first leaf&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/undergraduate&quot;&gt;Undergraduate&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;leaf&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/graduate&quot;&gt;Graduate&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;leaf&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/scholarships&quot;&gt;Scholarships &amp;amp; Aid&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;last leaf&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/careers&quot;&gt;Careers in CSE&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li class=&quot;expanded&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/current-student&quot;&gt;Current Student&lt;/a&gt;&lt;ul&gt;&lt;li class=&quot;first leaf&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/current-undergraduate&quot;&gt;Undergraduate&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;leaf&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/current-graduate&quot;&gt;Graduate&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;leaf&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/get-involved&quot;&gt;Get Involved&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;leaf&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/career-experience&quot;&gt;Career Experience&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;last leaf&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/honors&quot;&gt;Honors&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li class=&quot;expanded&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/research-innovation&quot;&gt;Research &amp;amp; Innovation&lt;/a&gt;&lt;ul&gt;&lt;li class=&quot;first leaf&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/research-groups-facilities&quot;&gt;Groups &amp;amp; Facilities&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;leaf&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/current-colloquium-series&quot;&gt;Colloquium Series&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;leaf&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/innovation-lab&quot;&gt;Innovation Lab&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;last leaf&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/undergraduate-research&quot;&gt;Undergraduate Research&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li class=&quot;expanded&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/faculty-staff&quot;&gt;Faculty &amp;amp; Staff&lt;/a&gt;&lt;ul&gt;&lt;li class=&quot;first leaf&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/directory-group&quot;&gt;Directory&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;leaf&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/facultysearch&quot;&gt;Employment Opportunities&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;last leaf&quot;&gt;&lt;a href=&quot;https://cse.unl.edu/faculty/protected&quot; title=&quot;&quot;&gt;Faculty Resources&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li class=&quot;last expanded&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/alumni-friends&quot;&gt;Alumni &amp;amp; Friends&lt;/a&gt;&lt;ul&gt;&lt;li class=&quot;first leaf&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/alumni-stories&quot;&gt;Alumni Stories&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;leaf&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/give&quot;&gt;Give&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;leaf&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/schorr-center-rental&quot;&gt;Schorr Center - Rental&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;last leaf&quot;&gt;&lt;a href=&quot;http://cse.unl.edu/nebraska-hall-of-computing&quot;&gt;Hall of Computing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- InstanceEndEditable --&gt;
+                    &lt;label for=&quot;wdn_menu_toggle&quot; class=&quot;wdn-icon-menu&quot;&gt;Menu&lt;/label&gt;
+                &lt;/nav&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- Navigation Trigger --&gt;
+        &lt;div class=&quot;wdn-menu-trigger wdn-content-slide&quot;&gt;
+            &lt;label for=&quot;wdn_menu_toggle&quot; class=&quot;wdn-icon-menu&quot;&gt;Menu&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;!-- End navigation trigger --&gt;
+        &lt;div id=&quot;wdn_content_wrapper&quot; role=&quot;main&quot; class=&quot;wdn-content-slide&quot;&gt;
+            &lt;div class=&quot;wdn-band&quot;&gt;
+                &lt;div class=&quot;wdn-inner-wrapper&quot;&gt;
+                    &lt;div id=&quot;pagetitle&quot;&gt;
+
+&lt;!-- InstanceBeginEditable name=&quot;pagetitle&quot; --&gt;&lt;h1&gt;Home&lt;/h1&gt;&lt;!-- InstanceEndEditable --&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;maincontent&quot; class=&quot;wdn-main&quot;&gt;
+                &lt;!--THIS IS THE MAIN CONTENT AREA; WDN: see glossary item 'main content area' --&gt;
+
+&lt;!-- InstanceBeginEditable name=&quot;maincontentarea&quot; --&gt;
+
+
+
+&lt;div class=&quot;wdn-band&quot;&gt;
+
+&lt;div id=&quot;content&quot; class=&quot;region region-content content wdn-band&quot;&gt;
+
+&lt;div id=&quot;block-system-main&quot; class=&quot;block block-system&quot;&gt;
+
+
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;div id=&quot;node-58&quot; class=&quot;node node-page&quot;&gt;
+  &lt;div class=&quot;content&quot;&gt;
+          &lt;div class=&quot;field field-name-field-bands-top field-type-field-collection field-label-hidden clearfix&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;&lt;div class=&quot;entity entity-field-collection-item field-collection-item-field-bands-top clearfix&quot;&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;div class=&quot;field field-name-field-entity-reference field-type-entityreference field-label-hidden clearfix&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;&lt;div class=&quot;wdn-band wdn-promo-band&quot;&gt;
+
+
+  &lt;img class=&quot;wdn-stretch&quot; src=&quot;cse5.jpg&quot; alt=&quot;Develop New Worlds&quot;&gt;
+  &lt;div class=&quot;wdn-promo-container&quot;&gt;
+    &lt;div class=&quot;wdn-promo-content&quot;&gt;
+      &lt;span class=&quot;wdn-promo-text&quot;&gt;Develop New Worlds&lt;/span&gt;
+          &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden clearfix&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt; &lt;div class=&quot;wdn-inner-wrapper&quot;&gt;
+    &lt;div class=&quot;center-text&quot;&gt;
+        &lt;i class=&quot;icon-comp-sci&quot; style=&quot;font-size:60px;&quot;&gt;&lt;/i&gt;
+        &lt;h1 style=&quot;margin-top: 0;&quot;&gt;The Department of Computer Science &amp; Engineering&lt;/h1&gt;
+    &lt;/div&gt;
+    &lt;p&gt;At UNL’s Department of Computer Science &amp; Engineering, we prepare students for the most innovative, challenging and promising careers of the 21st Century.&lt;/p&gt;
+    &lt;p&gt;Featuring world-class facilities, a groundbreaking curriculum, and renowned faculty members, we’re one of the country’s top computer science and engineering programs — including top-five in software engineering. And because the skills we teach are essential to the world’s fastest-growing job fields, we’re easily one of the university’s fastest growing departments. &lt;/p&gt;
+    &lt;p&gt;Interdisciplinary research is integral to our culture. &lt;/p&gt;
+    &lt;div class=&quot;wdn-grid&quot;&gt;
+        &lt;div class=&quot;bp2-wdn-col-one-third&quot;&gt;
+            &lt;div class=&quot;wdn-infographic wdn-infographic-globe-triad&quot;&gt;
+                &lt;div class=&quot;wdn-info-icon&quot;&gt;&lt;/div&gt;
+                &lt;span class=&quot;stat&quot;&gt;$5,000,000&lt;/span&gt;
+                &lt;div class=&quot;stat-helper&quot;&gt;
+                    &lt;p class=&quot;wdn-intro-p&quot;&gt;We invest about $5 million each year to conduct state-of-the-art research in software engineering, informatics and systems. &lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;bp2-wdn-col-one-third&quot;&gt;
+            &lt;div class=&quot;wdn-infographic wdn-infographic-people-energetic&quot;&gt;
+                &lt;div class=&quot;wdn-info-icon&quot;&gt;&lt;/div&gt;
+                &lt;span class=&quot;stat&quot;&gt;100%&lt;/span&gt;
+                &lt;div class=&quot;stat-helper&quot;&gt;
+                    &lt;p class=&quot;wdn-intro-p&quot;&gt;
+				Not only is 100 percent of our tenured and tenure-track faculty engaged in active research programs, but so are our graduate and undergraduate students.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;bp2-wdn-col-one-third component&quot;&gt;
+            &lt;div class=&quot;wdn-infographic wdn-infographic-internships-complement&quot;&gt;
+                &lt;div class=&quot;wdn-info-icon&quot;&gt;&lt;/div&gt;
+                &lt;span class=&quot;stat&quot;&gt;80%&lt;/span&gt;
+                &lt;div class=&quot;stat-helper&quot;&gt;
+                    &lt;p class=&quot;wdn-intro-p&quot;&gt;We have had a 100 percent job placement rate the last four years, but what’s more impressive is that 80 percent of those job offers were in hand before our students started their senior year.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;p&gt;Our Innovation Lab provides undergraduates an exclusive opportunity to experience real-world system development by creating innovative software and software/hardware solutions to address practical problems. The Jeffrey S. Raikes School of Computer Science and Management produces top-quality graduates who combine business knowledge and computing fundamentals for enterprise information and software systems. And our Game Developers Club exposes students to the latest in video gaming, including development competitions.&lt;/p&gt;
+    &lt;p&gt;With face-to-face advising and a vibrant, freshly renovated Student Resource Center, we make a future in computing accessible to anyone seeking great challenge and driven by curiosity.&lt;/p&gt;
+    &lt;p&gt;Our graduates are recruited by industry-leading companies, including IBM, Microsoft, Google, Garmin and Union Pacific, where they work to develop the hard and soft technologies we use everyday — the innovations that will make this world a better place for future generations.&lt;/p&gt;
+    &lt;p class=&quot;wdn-subhead&quot;&gt;Be one of us. Let curiosity move you.&lt;/p&gt;
+    &lt;div class=&quot;button-group&quot;&gt;
+        &lt;div class=&quot;wdn-grid-set&quot;&gt;
+            &lt;div class=&quot;wdn-col-full&quot;&gt;
+                &lt;a href=&quot;prospective-students&quot; class=&quot;wdn-button wdn-button-triad&quot;&gt;Prospective students&lt;/a&gt;
+                &lt;a href=&quot;current-student&quot; class=&quot;wdn-button wdn-button-triad&quot;&gt;Current students&lt;/a&gt;
+                &lt;a href=&quot;get-involved&quot; class=&quot;wdn-button wdn-button-triad&quot;&gt;Get involved&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;script type=&quot;text/javascript&quot;&gt;
+ WDN.loadCSS(WDN.getTemplateFilePath('css/modules/infographics.css'));
+ &lt;/script&gt; &lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field field-name-field-bands-bottom field-type-field-collection field-label-hidden clearfix&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;&lt;div class=&quot;entity entity-field-collection-item field-collection-item-field-bands-bottom clearfix&quot;&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;div class=&quot;field field-name-field-entity-reference field-type-entityreference field-label-hidden clearfix&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;&lt;div id=&quot;node-414&quot; class=&quot;node node-basic-band-content&quot;&gt;
+  &lt;div class=&quot;content&quot;&gt;
+          &lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden clearfix&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt; &lt;div class=&quot;how-to-apply&quot;&gt;
+    &lt;div class=&quot;wdn-inner-wrapper wdn-inner-padding-none&quot; style=&quot;padding-bottom: 35px;&quot;&gt;
+        &lt;!--h2 class=&quot;clear-top&quot;&gt;How to Apply&lt;/h2--&gt;
+        &lt;p&gt;Let curiosity move you to start your story. With the opportunity for hands-on experience through our nationally-acclaimed undergraduate research program, and a campus located at the heart of an innovative college city community of over 250,000 people, the University of Nebraska-Lincoln offers the ideal Big Ten collegiate experience for students at an affordable cost.&lt;/p&gt;
+        &lt;a href=&quot;http://admissions.unl.edu/apply.aspx&quot; class=&quot;wdn-button wdn-button-white&quot;&gt;Apply now&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt; &lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;
+
+      &lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+          &lt;div class=&quot;field-item odd&quot;&gt;&lt;div class=&quot;entity entity-field-collection-item field-collection-item-field-bands-bottom clearfix&quot;&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;div class=&quot;field field-name-field-view-reference field-type-viewreference field-label-hidden clearfix&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;&lt;div class=&quot;contextual-links-region&quot;&gt;&lt;div class=&quot;view view-homepage-latest-news view-id-homepage_latest_news view-display-id-block view-dom-id-c201d9c2701fc367c0e42aa0bae1f36a&quot;&gt;
+
+
+
+      &lt;div class=&quot;view-content&quot;&gt;
+      &lt;div class=&quot;wdn-inner-wrapper&quot;&gt;
+  &lt;h2&gt;Latest News&lt;/h2&gt;
+  &lt;div class=&quot;wdn-grid-set equal-column-height&quot;&gt;
+          &lt;div class=&quot;bp2-wdn-col-one-third&quot;&gt;
+        &lt;article class=&quot;homepage-news-item clearfix&quot;&gt;
+  &lt;div class=&quot;news-item-inner&quot;&gt;
+    &lt;div class=&quot;news-grid-image&quot;&gt;
+      &lt;div class=&quot;social-image-overlay&quot;&gt;
+        &lt;div class=&quot;social-share-icons&quot;&gt;
+          &lt;a target=&quot;_blank&quot; href=&quot;https://twitter.com/home?status=http://news.unl.edu/newsrooms/unltoday/article/fire-starting-drone-could-aid-in-conservation-fire-prevention/&quot;&gt;&lt;img src=&quot;images/twitter-icon-white.png&quot; alt=&quot;Share on Twitter&quot; /&gt;&lt;/a&gt;
+          &lt;a target=&quot;_blank&quot; href=&quot;https://www.facebook.com/sharer/sharer.php?u=http://news.unl.edu/newsrooms/unltoday/article/fire-starting-drone-could-aid-in-conservation-fire-prevention/&quot;&gt;&lt;img src=&quot;images/fb-icon-white.png&quot; alt=&quot;Share on Facebook&quot; /&gt;&lt;/a&gt;
+          &lt;a target=&quot;_blank&quot; href=&quot;https://plus.google.com/share?url=http://news.unl.edu/newsrooms/unltoday/article/fire-starting-drone-could-aid-in-conservation-fire-prevention/&quot;&gt;&lt;img src=&quot;images/gplus-icon-white.png&quot; alt=&quot;Share on Google+&quot; /&gt;&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+              &lt;img src=&quot;feeds/images/151029_Fire_Drone_071a_0.jpg&quot; alt=&quot;Fire-starting drone could aid in conservation, fire prevention&quot; /&gt;
+          &lt;/div&gt;
+    &lt;div class=&quot;news-grid-content&quot;&gt;
+      &lt;h4&gt;&lt;a href=&quot;http://news.unl.edu/newsrooms/unltoday/article/fire-starting-drone-could-aid-in-conservation-fire-prevention/&quot;&gt;Fire-starting drone could aid in conservation, fire prevention&lt;/a&gt;&lt;/h4&gt;
+      &lt;span class=&quot;news-grid-date&quot;&gt;Posted: October 30, 2015&lt;/span&gt;
+
+      &lt;div class=&quot;news-grid-mobile-social&quot;&gt;
+        &lt;a target=&quot;_blank&quot; href=&quot;https://twitter.com/home?status=http://news.unl.edu/newsrooms/unltoday/article/fire-starting-drone-could-aid-in-conservation-fire-prevention/&quot;&gt;&lt;img src=&quot;images/twitter-icon.png&quot; alt=&quot;Share on Twitter&quot; /&gt;&lt;/a&gt;
+        &lt;a target=&quot;_blank&quot; href=&quot;https://www.facebook.com/sharer/sharer.php?u=http://news.unl.edu/newsrooms/unltoday/article/fire-starting-drone-could-aid-in-conservation-fire-prevention/&quot;&gt;&lt;img src=&quot;images/fb-icon.png&quot; alt=&quot;Share on Facebook&quot; /&gt;&lt;/a&gt;
+        &lt;a target=&quot;_blank&quot; href=&quot;https://plus.google.com/share?url=http://news.unl.edu/newsrooms/unltoday/article/fire-starting-drone-could-aid-in-conservation-fire-prevention/&quot;&gt;&lt;img src=&quot;images/gplus-icon.png&quot; alt=&quot;Share on Google+&quot; /&gt;&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;news-grid-read-more&quot;&gt;
+        &lt;a href=&quot;http://news.unl.edu/newsrooms/unltoday/article/fire-starting-drone-could-aid-in-conservation-fire-prevention/&quot;&gt;READ MORE&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+      &lt;/div&gt;
+          &lt;div class=&quot;bp2-wdn-col-one-third&quot;&gt;
+        &lt;article class=&quot;homepage-news-item clearfix&quot;&gt;
+  &lt;div class=&quot;news-item-inner&quot;&gt;
+    &lt;div class=&quot;news-grid-image&quot;&gt;
+      &lt;div class=&quot;social-image-overlay&quot;&gt;
+        &lt;div class=&quot;social-share-icons&quot;&gt;
+          &lt;a target=&quot;_blank&quot; href=&quot;https://twitter.com/home?status=http://news.unl.edu/newsrooms/unltoday/article/fire-starting-drone-could-aid-in-conservation-fire-prevention/&quot;&gt;&lt;img src=&quot;images/twitter-icon-white.png&quot; alt=&quot;Share on Twitter&quot; /&gt;&lt;/a&gt;
+          &lt;a target=&quot;_blank&quot; href=&quot;https://www.facebook.com/sharer/sharer.php?u=http://news.unl.edu/newsrooms/unltoday/article/fire-starting-drone-could-aid-in-conservation-fire-prevention/&quot;&gt;&lt;img src=&quot;images/fb-icon-white.png&quot; alt=&quot;Share on Facebook&quot; /&gt;&lt;/a&gt;
+          &lt;a target=&quot;_blank&quot; href=&quot;https://plus.google.com/share?url=http://news.unl.edu/newsrooms/unltoday/article/fire-starting-drone-could-aid-in-conservation-fire-prevention/&quot;&gt;&lt;img src=&quot;images/gplus-icon-white.png&quot; alt=&quot;Share on Google+&quot; /&gt;&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+              &lt;img src=&quot;feeds/images/151029_Fire_Drone_071a.jpg&quot; alt=&quot;Fire-starting drone could aid in conservation, fire prevention&quot; /&gt;
+          &lt;/div&gt;
+    &lt;div class=&quot;news-grid-content&quot;&gt;
+      &lt;h4&gt;&lt;a href=&quot;http://news.unl.edu/newsrooms/unltoday/article/fire-starting-drone-could-aid-in-conservation-fire-prevention/&quot;&gt;Fire-starting drone could aid in conservation, fire prevention&lt;/a&gt;&lt;/h4&gt;
+      &lt;span class=&quot;news-grid-date&quot;&gt;Posted: October 30, 2015&lt;/span&gt;
+
+      &lt;div class=&quot;news-grid-mobile-social&quot;&gt;
+        &lt;a target=&quot;_blank&quot; href=&quot;https://twitter.com/home?status=http://news.unl.edu/newsrooms/unltoday/article/fire-starting-drone-could-aid-in-conservation-fire-prevention/&quot;&gt;&lt;img src=&quot;images/twitter-icon.png&quot; alt=&quot;Share on Twitter&quot; /&gt;&lt;/a&gt;
+        &lt;a target=&quot;_blank&quot; href=&quot;https://www.facebook.com/sharer/sharer.php?u=http://news.unl.edu/newsrooms/unltoday/article/fire-starting-drone-could-aid-in-conservation-fire-prevention/&quot;&gt;&lt;img src=&quot;images/fb-icon.png&quot; alt=&quot;Share on Facebook&quot; /&gt;&lt;/a&gt;
+        &lt;a target=&quot;_blank&quot; href=&quot;https://plus.google.com/share?url=http://news.unl.edu/newsrooms/unltoday/article/fire-starting-drone-could-aid-in-conservation-fire-prevention/&quot;&gt;&lt;img src=&quot;images/gplus-icon.png&quot; alt=&quot;Share on Google+&quot; /&gt;&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;news-grid-read-more&quot;&gt;
+        &lt;a href=&quot;http://news.unl.edu/newsrooms/unltoday/article/fire-starting-drone-could-aid-in-conservation-fire-prevention/&quot;&gt;READ MORE&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+      &lt;/div&gt;
+          &lt;div class=&quot;bp2-wdn-col-one-third&quot;&gt;
+        &lt;article class=&quot;homepage-news-item clearfix&quot;&gt;
+  &lt;div class=&quot;news-item-inner&quot;&gt;
+    &lt;div class=&quot;news-grid-image&quot;&gt;
+      &lt;div class=&quot;social-image-overlay&quot;&gt;
+        &lt;div class=&quot;social-share-icons&quot;&gt;
+          &lt;a target=&quot;_blank&quot; href=&quot;https://twitter.com/home?status=http://news.unl.edu/newsrooms/unltoday/article/registration-open-for-it-leadership-conference/&quot;&gt;&lt;img src=&quot;images/twitter-icon-white.png&quot; alt=&quot;Share on Twitter&quot; /&gt;&lt;/a&gt;
+          &lt;a target=&quot;_blank&quot; href=&quot;https://www.facebook.com/sharer/sharer.php?u=http://news.unl.edu/newsrooms/unltoday/article/registration-open-for-it-leadership-conference/&quot;&gt;&lt;img src=&quot;images/fb-icon-white.png&quot; alt=&quot;Share on Facebook&quot; /&gt;&lt;/a&gt;
+          &lt;a target=&quot;_blank&quot; href=&quot;https://plus.google.com/share?url=http://news.unl.edu/newsrooms/unltoday/article/registration-open-for-it-leadership-conference/&quot;&gt;&lt;img src=&quot;images/gplus-icon-white.png&quot; alt=&quot;Share on Google+&quot; /&gt;&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+              &lt;img src=&quot;feeds/images/ITleadershipconf.jpg&quot; alt=&quot;Registration open for IT leadership conference&quot; /&gt;
+          &lt;/div&gt;
+    &lt;div class=&quot;news-grid-content&quot;&gt;
+      &lt;h4&gt;&lt;a href=&quot;http://news.unl.edu/newsrooms/unltoday/article/registration-open-for-it-leadership-conference/&quot;&gt;Registration open for IT leadership conference&lt;/a&gt;&lt;/h4&gt;
+      &lt;span class=&quot;news-grid-date&quot;&gt;Posted: October 30, 2015&lt;/span&gt;
+
+      &lt;div class=&quot;news-grid-mobile-social&quot;&gt;
+        &lt;a target=&quot;_blank&quot; href=&quot;https://twitter.com/home?status=http://news.unl.edu/newsrooms/unltoday/article/registration-open-for-it-leadership-conference/&quot;&gt;&lt;img src=&quot;images/twitter-icon.png&quot; alt=&quot;Share on Twitter&quot; /&gt;&lt;/a&gt;
+        &lt;a target=&quot;_blank&quot; href=&quot;https://www.facebook.com/sharer/sharer.php?u=http://news.unl.edu/newsrooms/unltoday/article/registration-open-for-it-leadership-conference/&quot;&gt;&lt;img src=&quot;images/fb-icon.png&quot; alt=&quot;Share on Facebook&quot; /&gt;&lt;/a&gt;
+        &lt;a target=&quot;_blank&quot; href=&quot;https://plus.google.com/share?url=http://news.unl.edu/newsrooms/unltoday/article/registration-open-for-it-leadership-conference/&quot;&gt;&lt;img src=&quot;images/gplus-icon.png&quot; alt=&quot;Share on Google+&quot; /&gt;&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;news-grid-read-more&quot;&gt;
+        &lt;a href=&quot;http://news.unl.edu/newsrooms/unltoday/article/registration-open-for-it-leadership-conference/&quot;&gt;READ MORE&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;wdn-band&quot; &gt;
+    &lt;div class=&quot;wdn-inner-wrapper wdn-inner-padding-sm&quot;&gt;
+        &lt;p class=&quot;wdn-center&quot;&gt;
+            &lt;a href=&quot;news-page-grid&quot; class=&quot;wdn-button wdn-button-triad clear-top&quot;&gt;More News Stories&lt;/a&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+jQuery(document).ready(function () {
+
+  var imgWidth = 0,
+      $articles = jQuery('article.homepage-news-item');
+
+  jQuery.fn.setAllToMaxHeight = function() {
+    return this.height( Math.max.apply(this, jQuery.map( this , function(e){ return jQuery(e).height() }) ) );
+  }
+
+  function pictureHeights () {
+    var width = Math.round(jQuery('div.news-grid-image').first().width());
+
+    if (width != imgWidth) {
+      imgWidth = width;
+      height = width / 1.77;
+
+      jQuery('div.news-grid-image').height(height);
+    }
+  }
+
+  pictureHeights();
+  $articles.setAllToMaxHeight();
+
+  jQuery(window).resize(function(event) {
+    pictureHeights();
+    $articles.css('height', 'auto').setAllToMaxHeight();
+  });
+});
+&lt;/script&gt;
+    &lt;/div&gt;
+
+
+
+
+
+
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;&lt;div class=&quot;entity entity-field-collection-item field-collection-item-field-bands-bottom clearfix&quot;&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;div class=&quot;field field-name-field-entity-reference field-type-entityreference field-label-hidden clearfix&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;&lt;div id=&quot;node-59&quot; class=&quot;node node-page&quot;&gt;
+  &lt;div class=&quot;content&quot;&gt;
+          &lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden clearfix&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt; &lt;div class=&quot;wdn-band wdn-light-triad-band&quot;&gt;
+&lt;div class=&quot;wdn-inner-wrapper wdn-inner-padding-sm&quot;&gt;
+  &lt;h2&gt;Upcoming Events&lt;/h2&gt;
+  &lt;div id=&quot;events-band&quot; class=&quot;bp1-wdn-grid-set-halves bp2-wdn-grid-set-thirds component&quot;&gt;&lt;/div&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    WDN.setPluginParam('events', 'href', '//events.unl.edu/cse/upcoming/');
+    WDN.setPluginParam('events', 'title', 'UNL');
+  &lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;WDN.initializePlugin('events-band',{limit:6});&lt;/script&gt;
+&lt;/div&gt;
+&lt;/div&gt; &lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;
+
+      &lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+          &lt;div class=&quot;field-item odd&quot;&gt;&lt;div class=&quot;entity entity-field-collection-item field-collection-item-field-bands-bottom clearfix&quot;&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;div class=&quot;field field-name-field-entity-reference field-type-entityreference field-label-hidden clearfix&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt;&lt;div id=&quot;node-214&quot; class=&quot;node node-page&quot;&gt;
+  &lt;div class=&quot;content&quot;&gt;
+          &lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden clearfix&quot;&gt;
+    &lt;div class=&quot;field-items&quot;&gt;
+          &lt;div class=&quot;field-item even&quot;&gt; &lt;div class=&quot;wdn-band wdn-light-complement-band&quot;&gt;
+    &lt;div class=&quot;wdn-inner-wrapper add-padding-top&quot;&gt;
+        &lt;div class=&quot;wdn-grid-set&quot;&gt;
+            &lt;div class=&quot;bp2-wdn-col-one-half centered&quot;&gt;
+                &lt;h3 class=&quot;wdn-center wdn-brand clear-top&quot; style=&quot;margin-bottom: 0;&quot;&gt;Follow and engage with us&lt;/h3&gt;
+                &lt;p class=&quot;wdn-center clear-top&quot;&gt;
+                    &lt;a href=&quot;https://www.facebook.com/CSEatUNL&quot;&gt;&lt;span class=&quot;wdn-icon-facebook-circled&quot; style=&quot;font-size: 3em;&quot;&gt;&lt;img src=&quot;blank.png&quot; alt=&quot;placeholder&quot; /&gt;&lt;/span&gt;&lt;/a&gt; &amp;nbsp;
+                    &lt;a href=&quot;https://twitter.com/CSEatUNL&quot;&gt;&lt;span class=&quot;wdn-icon-twitter-circled&quot; style=&quot;font-size: 3em;&quot;&gt;&lt;img src=&quot;blank.png&quot; alt=&quot;placeholder&quot; /&gt;&lt;/span&gt;&lt;/a&gt; &amp;nbsp;
+                    &lt;a href=&quot;https://www.youtube.com/user/CSEatUNL&quot;&gt;&lt;span class=&quot;wdn-icon-youtube-play&quot; style=&quot;font-size: 3em;&quot;&gt;&lt;img src=&quot;blank.png&quot; alt=&quot;placeholder&quot; /&gt;&lt;/span&gt;&lt;/a&gt;
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt; &lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;
+
+      &lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;
+
+      &lt;/div&gt;
+&lt;/div&gt;  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- InstanceEndEditable --&gt;
+                &lt;!--THIS IS THE END OF THE MAIN CONTENT AREA.--&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;wdn-band wdn-content-slide&quot; id=&quot;wdn_optional_footer&quot;&gt;
+            &lt;div class=&quot;wdn-inner-wrapper&quot;&gt;
+
+&lt;!-- InstanceBeginEditable name=&quot;optionalfooter&quot; --&gt;
+&lt;div id=&quot;optionalfooter&quot; class=&quot;region region-optionalfooter optionalfooter&quot;&gt;
+
+&lt;div id=&quot;block-block-103&quot; class=&quot;block block-block&quot;&gt;
+
+
+  &lt;div class=&quot;content&quot;&gt;
+        &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- InstanceEndEditable --&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;footer id=&quot;footer&quot; role=&quot;contentinfo&quot; class=&quot;wdn-content-slide&quot;&gt;
+            &lt;div class=&quot;wdn-band&quot; id=&quot;wdn_footer_related&quot;&gt;
+                &lt;div class=&quot;wdn-inner-wrapper&quot;&gt;
+
+&lt;!-- InstanceBeginEditable name=&quot;leftcollinks&quot; --&gt;
+&lt;div id=&quot;leftcollinks&quot; class=&quot;region region-leftcollinks leftcollinks&quot;&gt;
+
+&lt;div id=&quot;block-block-102&quot; class=&quot;block block-block&quot;&gt;
+
+    &lt;h3&gt;Related Links&lt;/h3&gt;
+
+  &lt;div class=&quot;content&quot;&gt;
+     &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://events.unl.edu/&quot;&gt;UNL Events Calendar&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://cas.unl.edu/&quot;&gt;College of Arts &amp; Science&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://engineering.unl.edu/&quot;&gt;College of Engineering&lt;/a&gt;&lt;/li&gt;
+&lt;!--li&gt;&lt;a href=&quot;http://ucomm.unl.edu/&quot;&gt;University Communications&lt;/a&gt;&lt;/li--&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.unl.edu/chancellor/&quot;&gt;Office of the Chancellor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;   &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- InstanceEndEditable --&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;wdn-band&quot;&gt;
+                &lt;div class=&quot;wdn-inner-wrapper&quot;&gt;
+                    &lt;div class=&quot;footer_col&quot; id=&quot;wdn_footer_contact&quot;&gt;
+                        &lt;h3&gt;Contact Us&lt;/h3&gt;
+                        &lt;div class=&quot;wdn-contact-wrapper&quot;&gt;
+
+&lt;!-- InstanceBeginEditable name=&quot;contactinfo&quot; --&gt;
+&lt;div id=&quot;contactinfo&quot; class=&quot;region region-contactinfo contactinfo&quot;&gt;
+
+&lt;div id=&quot;block-block-101&quot; class=&quot;block block-block&quot;&gt;
+
+
+  &lt;div class=&quot;content&quot;&gt;
+     &lt;p&gt;&lt;strong&gt;Department of Computer Science &amp;amp; Engineering&lt;/strong&gt;&lt;br /&gt; 256 Avery Hall&lt;br /&gt; Lincoln, NE 68588-0115&lt;br /&gt;Phone: 402-472-2401&lt;/p&gt;   &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- InstanceEndEditable --&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div id=&quot;wdn_copyright&quot;&gt;
+                        &lt;div class=&quot;wdn-footer-text&quot;&gt;
+
+&lt;!-- InstanceBeginEditable name=&quot;footercontent&quot; --&gt;
+
+&lt;div id=&quot;footercontent&quot; class=&quot;region region-footercontent footercontent&quot;&gt;
+
+&lt;div id=&quot;block-block-104&quot; class=&quot;block block-block&quot;&gt;
+
+
+  &lt;div class=&quot;content&quot;&gt;
+     &amp;copy; 2015 University of Nebraska–Lincoln | Lincoln, NE 68588 | 402-472-7211 | &lt;a href=&quot;http://www.unl.edu/about-unl/&quot; title=&quot;Click here to know more about UNL&quot;&gt;About UNL&lt;/a&gt;&lt;br /&gt; UNL is an equal opportunity employer with a comprehensive plan for diversity. Find out more: &lt;a href=&quot;https://employment.unl.edu/&quot; target=&quot;_blank&quot; title=&quot;Employment at UNL&quot;&gt;employment.unl.edu&lt;/a&gt;   &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- InstanceEndEditable --&gt;
+                            &lt;span id=&quot;wdn_attribution&quot;&gt;&lt;br/&gt;&lt;a href=&quot;http://www.unl.edu/equity/notice-nondiscrimination&quot;&gt;Notice of Nondiscrimination&lt;/a&gt;&lt;br/&gt;&lt;br /&gt;UNL web templates and quality assurance provided by the &lt;a href=&quot;http://wdn.unl.edu/&quot; title=&quot;UNL Web Developer Network&quot;&gt;Web&amp;nbsp;Developer&amp;nbsp;Network&lt;/a&gt; &amp;middot; &lt;a href=&quot;https://webaudit.unl.edu/qa-test/&quot; id=&quot;wdn_qa_link&quot;&gt;QA&amp;nbsp;Test&lt;/a&gt;&lt;/span&gt;
+
+                        &lt;/div&gt;
+                    &lt;div id=&quot;wdn_logos&quot;&gt;
+    &lt;div class=&quot;wdn-float-center&quot;&gt;
+        &lt;a href=&quot;http://www.unl.edu/&quot; id=&quot;unl_wordmark&quot;&gt;UNL Home&lt;/a&gt;
+        &lt;a href=&quot;http://www.bigten.org/&quot; id=&quot;b1g_wordmark&quot;&gt;Big Ten Website&lt;/a&gt;
+        &lt;a href=&quot;http://www.cic.net/home&quot; id=&quot;cic_wordmark&quot;&gt;CIC Website&lt;/a&gt;
+        &lt;a href=&quot;http://go.unl.edu/86bw&quot; id=&quot;tips_wordmark&quot;&gt;TIPS Incident Reporting&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- Not currently used --&gt;
+        &lt;/footer&gt;
+        &lt;noscript&gt;
+    &lt;div id=&quot;wdn_noscript&quot;&gt;
+        &lt;p class=&quot;wdn-content-slide&quot;&gt;
+            Some parts of this site work best with JavaScript enabled.
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/noscript&gt;
+
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
